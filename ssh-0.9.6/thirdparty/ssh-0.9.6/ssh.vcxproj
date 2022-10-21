@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\agent.c" />
+    <ClCompile Include="src\auth.c" />
+    <ClCompile Include="src\base64.c" />
+    <ClCompile Include="src\bignum.c" />
+    <ClCompile Include="src\bind.c" />
+    <ClCompile Include="src\bind_config.c" />
+    <ClCompile Include="src\buffer.c" />
+    <ClCompile Include="src\callbacks.c" />
+    <ClCompile Include="src\chachapoly.c" />
+    <ClCompile Include="src\channels.c" />
+    <ClCompile Include="src\client.c" />
+    <ClCompile Include="src\config.c" />
+    <ClCompile Include="src\config_parser.c" />
+    <ClCompile Include="src\connect.c" />
+    <ClCompile Include="src\connector.c" />
+    <ClCompile Include="src\curve25519.c" />
+    <ClCompile Include="src\dh-gex.c" />
+    <ClCompile Include="src\dh.c" />
+    <ClCompile Include="src\dh_key.c" />
+    <ClCompile Include="src\ecdh.c" />
+    <ClCompile Include="src\ecdh_gcrypt.c" />
+    <ClCompile Include="src\error.c" />
+    <ClCompile Include="src\external\bcrypt_pbkdf.c" />
+    <ClCompile Include="src\external\blowfish.c" />
+    <ClCompile Include="src\external\chacha.c" />
+    <ClCompile Include="src\external\curve25519_ref.c" />
+    <ClCompile Include="src\external\ed25519.c" />
+    <ClCompile Include="src\external\fe25519.c" />
+    <ClCompile Include="src\external\ge25519.c" />
+    <ClCompile Include="src\external\poly1305.c" />
+    <ClCompile Include="src\external\sc25519.c" />
+    <ClCompile Include="src\gcrypt_missing.c" />
+    <ClCompile Include="src\getpass.c" />
+    <ClCompile Include="src\gzip.c" />
+    <ClCompile Include="src\init.c" />
+    <ClCompile Include="src\kdf.c" />
+    <ClCompile Include="src\kex.c" />
+    <ClCompile Include="src\knownhosts.c" />
+    <ClCompile Include="src\known_hosts.c" />
+    <ClCompile Include="src\legacy.c" />
+    <ClCompile Include="src\libgcrypt.c" />
+    <ClCompile Include="src\log.c" />
+    <ClCompile Include="src\match.c" />
+    <ClCompile Include="src\messages.c" />
+    <ClCompile Include="src\misc.c" />
+    <ClCompile Include="src\options.c" />
+    <ClCompile Include="src\packet.c" />
+    <ClCompile Include="src\packet_cb.c" />
+    <ClCompile Include="src\packet_crypt.c" />
+    <ClCompile Include="src\pcap.c" />
+    <ClCompile Include="src\pki.c" />
+    <ClCompile Include="src\pki_container_openssh.c" />
+    <ClCompile Include="src\pki_ed25519.c" />
+    <ClCompile Include="src\pki_ed25519_common.c" />
+    <ClCompile Include="src\pki_gcrypt.c" />
+    <ClCompile Include="src\poll.c" />
+    <ClCompile Include="src\scp.c" />
+    <ClCompile Include="src\server.c" />
+    <ClCompile Include="src\session.c" />
+    <ClCompile Include="src\sftp.c" />
+    <ClCompile Include="src\sftpserver.c" />
+    <ClCompile Include="src\socket.c" />
+    <ClCompile Include="src\string.c" />
+    <ClCompile Include="src\threads.c" />
+    <ClCompile Include="src\threads\noop.c" />
+    <ClCompile Include="src\threads\threads_libgcrypt.c" />
+    <ClCompile Include="src\threads\winlocks.c" />
+    <ClCompile Include="src\token.c" />
+    <ClCompile Include="src\wrapper.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\libssh\agent.h" />
+    <ClInclude Include="include\libssh\auth.h" />
+    <ClInclude Include="include\libssh\bignum.h" />
+    <ClInclude Include="include\libssh\bind.h" />
+    <ClInclude Include="include\libssh\bind_config.h" />
+    <ClInclude Include="include\libssh\blf.h" />
+    <ClInclude Include="include\libssh\buffer.h" />
+    <ClInclude Include="include\libssh\bytearray.h" />
+    <ClInclude Include="include\libssh\callbacks.h" />
+    <ClInclude Include="include\libssh\chacha.h" />
+    <ClInclude Include="include\libssh\channels.h" />
+    <ClInclude Include="include\libssh\config.h" />
+    <ClInclude Include="include\libssh\config_parser.h" />
+    <ClInclude Include="include\libssh\crc32.h" />
+    <ClInclude Include="include\libssh\crypto.h" />
+    <ClInclude Include="include\libssh\curve25519.h" />
+    <ClInclude Include="include\libssh\dh-gex.h" />
+    <ClInclude Include="include\libssh\dh.h" />
+    <ClInclude Include="include\libssh\ecdh.h" />
+    <ClInclude Include="include\libssh\ed25519.h" />
+    <ClInclude Include="include\libssh\fe25519.h" />
+    <ClInclude Include="include\libssh\ge25519.h" />
+    <ClInclude Include="include\libssh\kex.h" />
+    <ClInclude Include="include\libssh\keys.h" />
+    <ClInclude Include="include\libssh\legacy.h" />
+    <ClInclude Include="include\libssh\libcrypto.h" />
+    <ClInclude Include="include\libssh\libssh.h" />
+    <ClInclude Include="include\libssh\libssh_version.h" />
+    <ClInclude Include="include\libssh\messages.h" />
+    <ClInclude Include="include\libssh\misc.h" />
+    <ClInclude Include="include\libssh\options.h" />
+    <ClInclude Include="include\libssh\packet.h" />
+    <ClInclude Include="include\libssh\pcap.h" />
+    <ClInclude Include="include\libssh\pki.h" />
+    <ClInclude Include="include\libssh\pki_priv.h" />
+    <ClInclude Include="include\libssh\poll.h" />
+    <ClInclude Include="include\libssh\poly1305.h" />
+    <ClInclude Include="include\libssh\priv.h" />
+    <ClInclude Include="include\libssh\sc25519.h" />
+    <ClInclude Include="include\libssh\scp.h" />
+    <ClInclude Include="include\libssh\server.h" />
+    <ClInclude Include="include\libssh\session.h" />
+    <ClInclude Include="include\libssh\sftp.h" />
+    <ClInclude Include="include\libssh\socket.h" />
+    <ClInclude Include="include\libssh\ssh1.h" />
+    <ClInclude Include="include\libssh\ssh2.h" />
+    <ClInclude Include="include\libssh\string.h" />
+    <ClInclude Include="include\libssh\threads.h" />
+    <ClInclude Include="include\libssh\token.h" />
+    <ClInclude Include="include\libssh\wrapper.h" />
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A049192-B510-4889-9B46-BA93FB6D70C5}</ProjectGuid>
+    <RootNamespace>libssh</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>LIBSSH_EXPORTS;_WINSOCK_DEPRECATED_NO_WARNINGS;</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>.;include;$(SolutionDir)thirdparty\gcrypt-1.10.1\include;$(SolutionDir)thirdparty\gpg-error-1.45\include;$(SolutionDir)thirdparty\zlib-1.2.12\include</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4267;4244;4101;4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <ImportLibrary>$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>gcrypt.lib;gpg-error.lib;zlib.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libzlib.lib;libgcrypt.lib;ws2_32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>LIBSSH_EXPORTS;_WINSOCK_DEPRECATED_NO_WARNINGS;</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.;include;$(SolutionDir)thirdparty\gcrypt-1.10.1\include;$(SolutionDir)thirdparty\gpg-error-1.45\include;$(SolutionDir)thirdparty\zlib-1.2.12\include</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4267;4244;4101;4146;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <ImportLibrary>$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>gcrypt.lib;gpg-error.lib;zlib.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Lib>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libzlib.lib;libgcrypt.lib;ws2_32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

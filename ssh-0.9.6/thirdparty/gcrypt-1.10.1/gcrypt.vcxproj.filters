@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{31557f5f-7f34-4caf-aefe-ab4cf10cfbf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\src">
+      <UniqueIdentifier>{0813e99b-b254-44d2-a542-28e72db7a1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cipher">
+      <UniqueIdentifier>{b80e5164-24be-42b4-9bdd-381af48f9d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\compat">
+      <UniqueIdentifier>{500e719a-b9ca-485c-8be1-61e61faf70d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mpi">
+      <UniqueIdentifier>{98843a5c-0c25-4562-905b-cf7f0831d3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\random">
+      <UniqueIdentifier>{6739e2d4-038d-45ac-9aa0-77ace20dfc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{91ea55fc-60c3-4fec-a5ca-c6ce7d828fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{11e27991-c6e5-4e93-9cd4-5d7efc8a3058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cipher">
+      <UniqueIdentifier>{7c8ceea1-f76b-45ba-80a8-7c7b1e89829b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{1fbb5a00-3780-4bb2-9b00-36ff1e9c569c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\compat">
+      <UniqueIdentifier>{6c00a6cd-2f41-46c3-8a5d-a8560e54c9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mpi">
+      <UniqueIdentifier>{44b36c0b-bbd2-491f-9c91-2af80973335f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mpi\generic">
+      <UniqueIdentifier>{36d195fd-9305-4f93-898e-b9212dc081fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\random">
+      <UniqueIdentifier>{42c09200-155c-498f-82f9-d5f91fbfcd25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcrypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher-proto.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\context.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ec-context.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\g10lib.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gcrypt-int.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmac256.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hwf-common.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\secmem.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdmem.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\types.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\visibility.h">
+      <Filter>Header Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\bithelp.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\bufhelp.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\camellia.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\cipher-internal.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\cipher-selftest.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\ecc-common.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\gost.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\hash-common.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\kdf-internal.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\keccak_permute_32.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\keccak_permute_64.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\mac-internal.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\poly1305-internal.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\pubkey-internal.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\rijndael-internal.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\rijndael-tables.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cipher\sha1.h">
+      <Filter>Header Files\cipher</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compat\libcompat.h">
+      <Filter>Header Files\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\asm-syntax.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\ec-inline.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\ec-internal.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\longlong.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\mod-source-info.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\mpi-asm-defs.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\mpi-inline.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\mpi-internal.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mpi\sysdep.h">
+      <Filter>Header Files\mpi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\random\rand-internal.h">
+      <Filter>Header Files\random</Filter>
+    </ClInclude>
+    <ClInclude Include="include\random\random.h">
+      <Filter>Header Files\random</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="versioninfo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gcrypt.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cipher\arcfour.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\blake2.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\blowfish.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\camellia-glue.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\camellia.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cast5.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\chacha20.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-aeswrap.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-cbc.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-ccm.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-cfb.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-cmac.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-ctr.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-eax.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-gcm-intel-pclmul.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-gcm-siv.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-gcm.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-ocb.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-ofb.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-poly1305.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-selftest.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-siv.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher-xts.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\cipher.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\crc-intel-pclmul.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\crc-ppc.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\crc.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\des.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\dsa-common.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\dsa.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-curves.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-ecdh.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-ecdsa.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-eddsa.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-gost.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-misc.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc-sm2.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\ecc.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\elgamal.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\gost28147.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\gostr3411-94.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\hash-common.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\idea.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\kdf.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\keccak.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\mac-cmac.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\mac-gmac.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\mac-hmac.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\mac-poly1305.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\mac.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\md.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\md4.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\md5.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\poly1305.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\primegen.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\pubkey-util.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\pubkey.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rfc2268.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rijndael-aesni.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rijndael-p10le.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rijndael-padlock.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rijndael-ssse3-amd64.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rijndael-vaes.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rijndael.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rmd160.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rsa-common.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\rsa.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\salsa20.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\scrypt.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\seed.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\serpent.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\sha1.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\sha256.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\sha512.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\sm3.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\sm4.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\stribog.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\tiger.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\twofish.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher\whirlpool.c">
+      <Filter>Source Files\cipher</Filter>
+    </ClCompile>
+    <ClCompile Include="src\context.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fips.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\global.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmac256.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hwf-x86.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hwfeatures.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\misc.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\missing-string.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\secmem.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sexp.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdmem.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\visibility.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compat\compat.c">
+      <Filter>Source Files\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\ec-ed25519.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\ec-hw-s390x.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\ec-nist.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\ec.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-add.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-bit.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-cmp.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-div.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-gcd.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-inline.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-inv.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-mod.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-mpow.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-mul.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-pow.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpi-scan.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpicoder.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpih-const-time.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpih-div.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpih-mul.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\mpiutil.c">
+      <Filter>Source Files\mpi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-add1.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-lshift.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-mul1.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-mul2.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-mul3.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-rshift.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mpi\generic\mpih-sub1.c">
+      <Filter>Source Files\mpi\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\random-csprng.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\random-drbg.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\random-system.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\random.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\rndhw.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\rndjent.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\rndw32.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random\rndw32ce.c">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

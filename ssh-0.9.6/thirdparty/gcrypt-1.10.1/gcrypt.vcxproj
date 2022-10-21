@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cipher-proto.h" />
+    <ClInclude Include="include\cipher.h" />
+    <ClInclude Include="include\cipher\bithelp.h" />
+    <ClInclude Include="include\cipher\bufhelp.h" />
+    <ClInclude Include="include\cipher\camellia.h" />
+    <ClInclude Include="include\cipher\cipher-internal.h" />
+    <ClInclude Include="include\cipher\cipher-selftest.h" />
+    <ClInclude Include="include\cipher\ecc-common.h" />
+    <ClInclude Include="include\cipher\gost.h" />
+    <ClInclude Include="include\cipher\hash-common.h" />
+    <ClInclude Include="include\cipher\kdf-internal.h" />
+    <ClInclude Include="include\cipher\keccak_permute_32.h" />
+    <ClInclude Include="include\cipher\keccak_permute_64.h" />
+    <ClInclude Include="include\cipher\mac-internal.h" />
+    <ClInclude Include="include\cipher\poly1305-internal.h" />
+    <ClInclude Include="include\cipher\pubkey-internal.h" />
+    <ClInclude Include="include\cipher\rijndael-internal.h" />
+    <ClInclude Include="include\cipher\rijndael-tables.h" />
+    <ClInclude Include="include\cipher\sha1.h" />
+    <ClInclude Include="include\compat\libcompat.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\context.h" />
+    <ClInclude Include="include\ec-context.h" />
+    <ClInclude Include="include\g10lib.h" />
+    <ClInclude Include="include\gcrypt-int.h" />
+    <ClInclude Include="include\gcrypt.h" />
+    <ClInclude Include="include\hmac256.h" />
+    <ClInclude Include="include\hwf-common.h" />
+    <ClInclude Include="include\mpi.h" />
+    <ClInclude Include="include\mpi\asm-syntax.h" />
+    <ClInclude Include="include\mpi\ec-inline.h" />
+    <ClInclude Include="include\mpi\ec-internal.h" />
+    <ClInclude Include="include\mpi\longlong.h" />
+    <ClInclude Include="include\mpi\mod-source-info.h" />
+    <ClInclude Include="include\mpi\mpi-asm-defs.h" />
+    <ClInclude Include="include\mpi\mpi-inline.h" />
+    <ClInclude Include="include\mpi\mpi-internal.h" />
+    <ClInclude Include="include\mpi\sysdep.h" />
+    <ClInclude Include="include\random\rand-internal.h" />
+    <ClInclude Include="include\random\random.h" />
+    <ClInclude Include="include\secmem.h" />
+    <ClInclude Include="include\stdmem.h" />
+    <ClInclude Include="include\types.h" />
+    <ClInclude Include="include\version.h" />
+    <ClInclude Include="include\visibility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="versioninfo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gcrypt.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cipher\arcfour.c" />
+    <ClCompile Include="src\cipher\blake2.c" />
+    <ClCompile Include="src\cipher\blowfish.c" />
+    <ClCompile Include="src\cipher\camellia-glue.c" />
+    <ClCompile Include="src\cipher\camellia.c" />
+    <ClCompile Include="src\cipher\cast5.c" />
+    <ClCompile Include="src\cipher\chacha20.c" />
+    <ClCompile Include="src\cipher\cipher-aeswrap.c" />
+    <ClCompile Include="src\cipher\cipher-cbc.c" />
+    <ClCompile Include="src\cipher\cipher-ccm.c" />
+    <ClCompile Include="src\cipher\cipher-cfb.c" />
+    <ClCompile Include="src\cipher\cipher-cmac.c" />
+    <ClCompile Include="src\cipher\cipher-ctr.c" />
+    <ClCompile Include="src\cipher\cipher-eax.c" />
+    <ClCompile Include="src\cipher\cipher-gcm-intel-pclmul.c" />
+    <ClCompile Include="src\cipher\cipher-gcm-siv.c" />
+    <ClCompile Include="src\cipher\cipher-gcm.c" />
+    <ClCompile Include="src\cipher\cipher-ocb.c" />
+    <ClCompile Include="src\cipher\cipher-ofb.c" />
+    <ClCompile Include="src\cipher\cipher-poly1305.c" />
+    <ClCompile Include="src\cipher\cipher-selftest.c" />
+    <ClCompile Include="src\cipher\cipher-siv.c" />
+    <ClCompile Include="src\cipher\cipher-xts.c" />
+    <ClCompile Include="src\cipher\cipher.c" />
+    <ClCompile Include="src\cipher\crc-intel-pclmul.c" />
+    <ClCompile Include="src\cipher\crc-ppc.c" />
+    <ClCompile Include="src\cipher\crc.c" />
+    <ClCompile Include="src\cipher\des.c" />
+    <ClCompile Include="src\cipher\dsa-common.c" />
+    <ClCompile Include="src\cipher\dsa.c" />
+    <ClCompile Include="src\cipher\ecc-curves.c" />
+    <ClCompile Include="src\cipher\ecc-ecdh.c" />
+    <ClCompile Include="src\cipher\ecc-ecdsa.c" />
+    <ClCompile Include="src\cipher\ecc-eddsa.c" />
+    <ClCompile Include="src\cipher\ecc-gost.c" />
+    <ClCompile Include="src\cipher\ecc-misc.c" />
+    <ClCompile Include="src\cipher\ecc-sm2.c" />
+    <ClCompile Include="src\cipher\ecc.c" />
+    <ClCompile Include="src\cipher\elgamal.c" />
+    <ClCompile Include="src\cipher\gost28147.c" />
+    <ClCompile Include="src\cipher\gostr3411-94.c" />
+    <ClCompile Include="src\cipher\hash-common.c" />
+    <ClCompile Include="src\cipher\idea.c" />
+    <ClCompile Include="src\cipher\kdf.c" />
+    <ClCompile Include="src\cipher\keccak.c" />
+    <ClCompile Include="src\cipher\mac-cmac.c" />
+    <ClCompile Include="src\cipher\mac-gmac.c" />
+    <ClCompile Include="src\cipher\mac-hmac.c" />
+    <ClCompile Include="src\cipher\mac-poly1305.c" />
+    <ClCompile Include="src\cipher\mac.c" />
+    <ClCompile Include="src\cipher\md.c" />
+    <ClCompile Include="src\cipher\md4.c" />
+    <ClCompile Include="src\cipher\md5.c" />
+    <ClCompile Include="src\cipher\poly1305.c" />
+    <ClCompile Include="src\cipher\primegen.c" />
+    <ClCompile Include="src\cipher\pubkey-util.c" />
+    <ClCompile Include="src\cipher\pubkey.c" />
+    <ClCompile Include="src\cipher\rfc2268.c" />
+    <ClCompile Include="src\cipher\rijndael-aesni.c" />
+    <ClCompile Include="src\cipher\rijndael-p10le.c" />
+    <ClCompile Include="src\cipher\rijndael-padlock.c" />
+    <ClCompile Include="src\cipher\rijndael-ssse3-amd64.c" />
+    <ClCompile Include="src\cipher\rijndael-vaes.c" />
+    <ClCompile Include="src\cipher\rijndael.c" />
+    <ClCompile Include="src\cipher\rmd160.c" />
+    <ClCompile Include="src\cipher\rsa-common.c" />
+    <ClCompile Include="src\cipher\rsa.c" />
+    <ClCompile Include="src\cipher\salsa20.c" />
+    <ClCompile Include="src\cipher\scrypt.c" />
+    <ClCompile Include="src\cipher\seed.c" />
+    <ClCompile Include="src\cipher\serpent.c" />
+    <ClCompile Include="src\cipher\sha1.c" />
+    <ClCompile Include="src\cipher\sha256.c" />
+    <ClCompile Include="src\cipher\sha512.c" />
+    <ClCompile Include="src\cipher\sm3.c" />
+    <ClCompile Include="src\cipher\sm4.c" />
+    <ClCompile Include="src\cipher\stribog.c" />
+    <ClCompile Include="src\cipher\tiger.c" />
+    <ClCompile Include="src\cipher\twofish.c" />
+    <ClCompile Include="src\cipher\whirlpool.c" />
+    <ClCompile Include="src\compat\compat.c" />
+    <ClCompile Include="src\context.c" />
+    <ClCompile Include="src\fips.c" />
+    <ClCompile Include="src\global.c" />
+    <ClCompile Include="src\hmac256.c" />
+    <ClCompile Include="src\hwf-x86.c" />
+    <ClCompile Include="src\hwfeatures.c" />
+    <ClCompile Include="src\misc.c" />
+    <ClCompile Include="src\missing-string.c" />
+    <ClCompile Include="src\mpi\ec-ed25519.c" />
+    <ClCompile Include="src\mpi\ec-hw-s390x.c" />
+    <ClCompile Include="src\mpi\ec-nist.c" />
+    <ClCompile Include="src\mpi\ec.c" />
+    <ClCompile Include="src\mpi\generic\mpih-add1.c" />
+    <ClCompile Include="src\mpi\generic\mpih-lshift.c" />
+    <ClCompile Include="src\mpi\generic\mpih-mul1.c" />
+    <ClCompile Include="src\mpi\generic\mpih-mul2.c" />
+    <ClCompile Include="src\mpi\generic\mpih-mul3.c" />
+    <ClCompile Include="src\mpi\generic\mpih-rshift.c" />
+    <ClCompile Include="src\mpi\generic\mpih-sub1.c" />
+    <ClCompile Include="src\mpi\mpi-add.c" />
+    <ClCompile Include="src\mpi\mpi-bit.c" />
+    <ClCompile Include="src\mpi\mpi-cmp.c" />
+    <ClCompile Include="src\mpi\mpi-div.c" />
+    <ClCompile Include="src\mpi\mpi-gcd.c" />
+    <ClCompile Include="src\mpi\mpi-inline.c" />
+    <ClCompile Include="src\mpi\mpi-inv.c" />
+    <ClCompile Include="src\mpi\mpi-mod.c" />
+    <ClCompile Include="src\mpi\mpi-mpow.c" />
+    <ClCompile Include="src\mpi\mpi-mul.c" />
+    <ClCompile Include="src\mpi\mpi-pow.c" />
+    <ClCompile Include="src\mpi\mpi-scan.c" />
+    <ClCompile Include="src\mpi\mpicoder.c" />
+    <ClCompile Include="src\mpi\mpih-const-time.c" />
+    <ClCompile Include="src\mpi\mpih-div.c" />
+    <ClCompile Include="src\mpi\mpih-mul.c" />
+    <ClCompile Include="src\mpi\mpiutil.c" />
+    <ClCompile Include="src\random\random-csprng.c" />
+    <ClCompile Include="src\random\random-drbg.c" />
+    <ClCompile Include="src\random\random-system.c" />
+    <ClCompile Include="src\random\random.c" />
+    <ClCompile Include="src\random\rndhw.c" />
+    <ClCompile Include="src\random\rndjent.c" />
+    <ClCompile Include="src\random\rndw32.c" />
+    <ClCompile Include="src\random\rndw32ce.c" />
+    <ClCompile Include="src\secmem.c" />
+    <ClCompile Include="src\sexp.c" />
+    <ClCompile Include="src\stdmem.c" />
+    <ClCompile Include="src\visibility.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{291DC77D-894B-4903-B382-696F4B2E64E8}</ProjectGuid>
+    <RootNamespace>libgcrypt</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;asm=__asm__;__x86_64__;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;include;include\mpi;include\cipher;include\compat;include\random;$(SolutionDir)thirdparty\gpg-error-1.45\include</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4146;4018;4028;4244;4267;4715;4334;4996;4703;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ModuleDefinitionFile>gcrypt.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gpg-error.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;asm=__asm__;__x86_64__;</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;include;include\mpi;include\cipher;include\compat;include\random;$(SolutionDir)thirdparty\gpg-error-1.45\include</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4146;4018;4028;4244;4267;4715;4334;4996;4703;4090;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>$(SolutionDir)\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <ModuleDefinitionFile>gcrypt.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gpg-error.lib;Advapi32.lib;User32.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
